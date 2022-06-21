@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    color: white;
+}
+
+body {
+    background-image: url(./Images/FondoAppClima.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    margin: 4rem;
+    min-width: 100vw;
+}
+
+body > main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+body > main > button {
+    width: 250px;
+    padding: 0.5rem;
+}
+
+body > main section ul {
+    list-style: none;
+}
+
+body > main section h1 {
+    margin-bottom: 1rem;
+}
+
+body > main section figure > img {
+    width: 150px;
+    height: 150px;
+}
+
+@media (min-width: 700px) {
+    body > main {
+        align-items: center;
+    }
+}
