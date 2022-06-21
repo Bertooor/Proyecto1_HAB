@@ -1,5 +1,4 @@
 "use strict";
-
 const weather_key = '6dcfbe4f5d769224af0c28453d74d3e7';
 
 const button = document.querySelector("button");
@@ -43,4 +42,4 @@ async function user (position) {
 
 button.addEventListener("click", () => {
     navigator.geolocation.getCurrentPosition(user);
-})
+});
