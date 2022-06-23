@@ -1,33 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto 1 Clima</title>
-    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clima</title>
+    <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body>
     <main>
-        <button>¿Lloverá en las próximas 12 horas?</button
-        <section>
-            <ul>
-                <li id="country"></li>
+        <button>¿Lloverá en mi ubicación las próximas 12 horas?</button>
+        <section id="primera">
+            <form id="form">
+                <input type="text" placeholder="Buscar si lloverá en otra ciudad..." id="search" />
+            </form>
+            <ul class="primera">
                 <li id="city"></li>
-                <li id="coord"></li>
-                <li id="population"></li>
-                
-                <li id="3hours"></li>
-                <li id="rain1"></li>
-                <li id="6hours"></li>
-                <li id="rain2"></li>
-                <li id="9hours"></li>
-                <li id="rain3"></li>
-                <li id="12hours"></li>
-                <li id="rain4"></li>
+                <li id="hours3"></li>
+                    <ul class="segunda">
+                        <li id="temp1"></li>
+                        <li id="icono1"></li>
+                        <li id="rain1"></li>
+                    </ul>
+                <li id="hours6"></li>
+                    <ul class="tercera">
+                        <li id="temp2"></li>
+                        <li id="icono2"></li>
+                        <li id="rain2"></li>
+                    </ul>
+                <li id="hours9"></li>
+                    <ul class="cuarta">
+                        <li id="temp3"></li>
+                        <li id="icono3"></li>
+                        <li id="rain3"></li>
+                    </ul>
+                <li id="hours12"></li>
+                    <ul class="quinta">
+                        <li id="temp4"></li>
+                        <li id="icono4"></li>
+                        <li id="rain4"></li>
+                    </ul>
             </ul>
+
         </section>
         <section id="icono">
             <h1>Nombre aplicación</h1>
@@ -37,6 +53,9 @@
         </section>
 
     </main>
+    <footer>
+        Creado por Alberto Leandro y Leonardo de Abreu.
+    </footer>
     <script type="module" src="./script.js"></script>
 </body>
 

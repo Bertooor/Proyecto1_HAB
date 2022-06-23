@@ -2,10 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-html {
-    color: white;
+    color: #090a0d;
 }
 
 body {
@@ -13,27 +10,57 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: left;
-    margin: 4rem;
-    min-width: 100vw;
 }
 
 body > main {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+    text-align: center;
 }
 
 body > main > button {
     width: 250px;
     padding: 0.5rem;
+    background-color: rgb(242, 208, 107);
+    margin: 1rem;
 }
 
-body > main section ul {
-    list-style: none;
+body > main section > form > input{
+    width: 250px;
+    padding: 0.5rem;
+    margin: 1rem;
+    border: 2px solid rgb(242, 208, 107);
 }
+
+body > main section#primera {
+
+}
+
+body > main section ul.primera {
+    list-style: none;
+    background-color: rgba(242, 208, 107, 0.6);
+    margin: 2rem;
+    padding-bottom: 1rem;
+}
+
+li#city, li#hours3, li#hours6, li#hours9, li#hours12 {
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+li#city {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+ul.segunda, ul.tercera, ul.cuarta, ul.quinta {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    list-style: none;
+} 
 
 body > main section h1 {
-    margin-bottom: 1rem;
+    margin: 2rem;
+    color: rgb(242, 208, 107);
 }
 
 body > main section figure > img {
@@ -41,8 +68,19 @@ body > main section figure > img {
     height: 150px;
 }
 
+body footer {
+    margin-top: 4rem;
+    text-align: center;
+    color: rgb(242, 208, 107);
+    margin-bottom: 1rem;
+}
+
 @media (min-width: 700px) {
     body > main {
         align-items: center;
+    }
+
+    body footer {
+        text-align: center;
     }
 }
