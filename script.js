@@ -59,6 +59,41 @@ button.addEventListener("click", () => {
     navigator.geolocation.getCurrentPosition(user);
 });
 
-            
+
+async function busqueda(position) {
+    try {
+        const response = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${position}&appid=${weather_key}`)
+        const data = await response.json();
+        console.log(data);
+        li1.textContent = `${data.city.name}, ${data.city.country}`;
+        li2.textContent = data.list[0].dt_txt;
+        li3.textContent = `${toCelsius(data.list[0].main.temp)}c`;
+        //li4.textContent =
+        li5.textContent = data.list[0].weather[0].main;
+        li6.textContent = data.list[1].dt_txt;
+        li7.textContent = `${toCelsius(data.list[1].main.temp)}c`;
+        //li8.textContent =
+        li9.textContent = data.list[1].weather[0].main;
+        li10.textContent = data.list[2].dt_txt;
+        li11.textContent = `${toCelsius(data.list[2].main.temp)}c`;
+        //li12.textContent = 
+        li13.textContent = data.list[2].weather[0].main;
+        li14.textContent = data.list[3].dt_txt;
+        li15.textContent = `${toCelsius(data.list[3].main.temp)}c`;
+        //li16.textContent = icon;
+        li17.textContent = data.list[3].weather[0].main;
+    } catch(error) {
+        console.error(`tenemos un error`, error.message);
+    }
+}
+
+function onSubmit(event) {
+    event.preventDefault();
+    busqueda(searchbox.value);
+}
+
+const form = document.getElementById("form");
+const searchbox = document.getElementById("search");
+form.addEventListener("submit", onSubmit);             
             
             
