@@ -1,86 +1,102 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: #090a0d;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #090a0d;
 }
 
 body {
-    background-image: url(./Images/FondoAppClima.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: left;
+  background-image: url(./Images/FondoAppClima.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
 }
 
 body > main {
-    text-align: center;
+  text-align: center;
 }
 
 body > main > button {
-    width: 250px;
-    padding: 0.5rem;
-    background-color: rgb(242, 208, 107);
-    margin: 1rem;
+  width: 320px;
+  padding: 0.5rem;
+  background-color: rgb(242, 208, 107);
+  margin: 1rem;
+  border-radius: 20px;
+  box-shadow: 3px 3px 9px rgb(169, 166, 166);
+}
+body > main > button:hover {
+  background-color: rgb(169, 166, 166);
+}
+body > main section > form > input {
+  width: 230px;
+  padding: 0.5rem;
+  margin: 1rem;
+  border: 2px solid rgb(242, 208, 107);
+  border-radius: 20px;
+  box-shadow: 3px 3px 9px rgb(169, 166, 166);
 }
 
-body > main section > form > input{
-    width: 250px;
-    padding: 0.5rem;
-    margin: 1rem;
-    border: 2px solid rgb(242, 208, 107);
-}
-
-body > main section#primera {
-
-}
+/* //body > main section#primera {
+}// */
 
 body > main section ul.primera {
-    list-style: none;
-    background-color: rgba(242, 208, 107, 0.6);
-    margin: 2rem;
-    padding-bottom: 1rem;
+  list-style: none;
+  background-color: rgba(242, 208, 107, 0.6);
+  margin: 2rem;
+  padding-bottom: 1rem;
+  border-radius: 20px;
 }
 
-li#city, li#hours3, li#hours6, li#hours9, li#hours12 {
-    padding: 1rem;
-    margin-top: 1rem;
+li#hours3,
+li#hours6,
+li#hours9,
+li#hours12 {
+  padding: 1rem;
+  font-size: 1.6vw;
 }
 
 li#city {
-    font-size: 2rem;
-    text-transform: uppercase;
+  font-size: 2.5vw;
+  text-transform: uppercase;
+  padding: 1rem;
+  margin-top: 1rem;
+  font-style: italic;
 }
 
-ul.segunda, ul.tercera, ul.cuarta, ul.quinta {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    list-style: none;
-} 
+ul.segunda,
+ul.tercera,
+ul.cuarta,
+ul.quinta {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  list-style: none;
+  font-weight: bold;
+}
 
 body > main section h1 {
-    margin: 2rem;
-    color: rgb(242, 208, 107);
+  margin: 2rem;
+  color: rgb(242, 208, 107);
 }
 
 body > main section figure > img {
-    width: 150px;
-    height: 150px;
+  width: 150px;
+  height: 150px;
 }
 
 body footer {
-    margin-top: 4rem;
-    text-align: center;
-    color: rgb(242, 208, 107);
-    margin-bottom: 1rem;
+  margin-top: 4rem;
+  text-align: right;
+  color: rgb(242, 208, 107);
+  margin-bottom: 1rem;
 }
 
 @media (min-width: 700px) {
-    body > main {
-        align-items: center;
-    }
+  body > main {
+    align-items: center;
+  }
 
-    body footer {
-        text-align: center;
-    }
+  body footer {
+    text-align: right;
+  }
 }
