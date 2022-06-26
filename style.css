@@ -17,7 +17,7 @@ body > main {
 }
 
 body > main > button {
-  width: 320px;
+  width: 250px;
   padding: 0.5rem;
   background-color: rgb(242, 208, 107);
   margin: 1rem;
@@ -28,7 +28,7 @@ body > main > button:hover {
   background-color: rgb(169, 166, 166);
 }
 body > main section > form > input {
-  width: 230px;
+  width: 300px;
   padding: 0.5rem;
   margin: 1rem;
   border: 2px solid rgb(242, 208, 107);
@@ -52,11 +52,11 @@ li#hours6,
 li#hours9,
 li#hours12 {
   padding: 1rem;
-  font-size: 1.6vw;
+  font-size: 1.3vw;
 }
 
 li#city {
-  font-size: 2.5vw;
+  font-size: 2vw;
   text-transform: uppercase;
   padding: 1rem;
   margin-top: 1rem;
@@ -72,6 +72,7 @@ ul.quinta {
   gap: 1rem;
   list-style: none;
   font-weight: bold;
+  font-size: 1.1vw;
 }
 
 body > main section h1 {

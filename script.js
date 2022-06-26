@@ -37,15 +37,15 @@ async function user(position) {
     li6.textContent = data.list[1].dt_txt;
     li7.textContent = `Temperature:${toCelsius(data.list[1].main.temp)}ºC`;
     //li8.textContent =
-    li9.textContent = data.list[1].weather[0].main;
+    li9.textContent = `Forecast: ${data.list[1].weather[0].main}`;
     li10.textContent = data.list[2].dt_txt;
     li11.textContent = `Temperature:${toCelsius(data.list[2].main.temp)}ºC`;
     //li12.textContent =
-    li13.textContent = data.list[2].weather[0].main;
+    li13.textContent = `Forecast: ${data.list[2].weather[0].main}`;
     li14.textContent = data.list[3].dt_txt;
     li15.textContent = `Temperature: ${toCelsius(data.list[3].main.temp)}ºC`;
     //li16.textContent =
-    li17.textContent = data.list[3].weather[0].main;
+    li17.textContent = `Forecast: ${data.list[3].weather[0].main}`;
   } catch (error) {
     console.error(`tenemos un error`, error.message);
   }
