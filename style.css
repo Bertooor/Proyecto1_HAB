@@ -36,8 +36,9 @@ body > main section > form > input {
   box-shadow: 3px 3px 9px rgb(169, 166, 166);
 }
 
-/* //body > main section#primera {
-}// */
+body > main section p {
+  color: red;
+}
 
 body > main section ul.primera {
   list-style: none;
@@ -69,10 +70,15 @@ ul.cuarta,
 ul.quinta {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 1rem;
   list-style: none;
   font-weight: bold;
   font-size: 1.7vw;
+}
+
+li > img {
+  display: none;
 }
 
 body > main section h1 {
