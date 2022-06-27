@@ -38,6 +38,7 @@ body > main section > form > input {
 
 body > main section p {
   color: red;
+  font-size: 2.5vw;
 }
 
 body > main section ul.primera {
